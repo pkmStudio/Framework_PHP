@@ -1,4 +1,4 @@
-# PHP FrameWork
+# PHP Framework
 
 
 I am learning Full Stack development. Here I post my progress in my studies and projects that I have implemented.
