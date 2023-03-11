@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const postData = async ( url = "", data = {}, method = "POST") => {
 		//Собственно сам запрос
 		const response = await fetch(url, {
-			method: method,// *GET, POST, PUT, DELETE, etc.
+			method: method, // *GET, POST, PUT, DELETE, etc.
 			headers: {
 				//'Content-Type': 'multipart/form-data',
 				//'Content-Type': 'application/json',
@@ -35,13 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
       return json;
 	};
 
-   const sub = '';
 // Объявляем переменные
 
 	const forms = document.querySelectorAll('form');
    const blockErrror = document.querySelector('.block-error');
 
-// Программа 
+// Программа по отправке данных с формы (Любой) на сервер
 	forms.forEach((form) => {
 
 		form.onsubmit = function (e) {
@@ -69,6 +68,5 @@ document.addEventListener("DOMContentLoaded", function () {
             });
          e.target.reset();
       };
-      
 	});
 });
